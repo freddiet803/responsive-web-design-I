@@ -1,3 +1,242 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+.container {
+	margin: auto;
+	width: 900px;
+	/*border: solid 1px black;*/
+	
+}
+
+header {
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+	
+}
+/*begin flex for nav container*/
+.nav-flex {
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row;
+	text-align: center;
+	width: 100%;
+	align-items: center;
+	
+	
+}
+/*end flex for nav container*/
+.logo {
+	text-align: center;
+	margin-left: 140px;
+	
+}
+
+
+header nav a {
+	margin: 0px 30px 0px 20px;
+	color: grey;
+	text-decoration: none;
+	transition: all 1s ease-in-out;
+}
+
+header nav a:hover {
+	font-size: 15px;
+	color: red;
+
+}
+
+
+
+.largeH1 {
+	font-size: 80px;
+	text-align: center;
+}
+.button {
+	text-align: center;
+	border: solid 1px black;
+	height: 30px;
+	width: 150px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 80px;
+}
+
+/*begin flex for section getStarted with the header and circle image*/
+.getStarted-flex {
+	display: flex;
+	margin-top: 100px;
+	/*margin-left: 100px;*/
+	justify-content: flex-end;
+	align-content: center;
+	
+}
+
+
+
+.circle-pic {
+	margin-left: 80px;
+	
+}
+
+.large-header {
+	align-self: center;
+}
+
+/*end getStarted section flex properties*/
+
+
+/*begin twoCol section flex properties*/
+.twoCol-flex {
+	width: 100%;
+	border-top: solid 1px black;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row; /*which we know is default*/
+	
+}
+
+.feature-section {
+	/*padding: 40px 10px 0px 0px;*/
+	/*display: inline-block;*/
+	width: 45%;
+	margin-top: 40px;
+	margin-right: 40px;
+}
+
+.about-section {
+	/*padding: 40px 10px 0px 0px;*/
+	/*display: inline-block;*/
+	width: 45%;
+	margin-top: 40px;
+
+}
+
+/*end twoCol flex property manipulation*/
+
+.middle-img {
+	margin-top: 40px;
+	width: 100%;
+}
+
+/*being threeCol flex property manipulation*/
+.threeCol-flex {
+	margin-top: 40px;
+	width: 100%;
+	border-bottom: solid 1px black;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+/*end threeCol flex property maniputlation*/
+.services {
+	/*display: inline-block;*/
+	width: 32%;
+	margin-right: 5px;
+	margin-bottom: 40px;
+}
+
+.product {
+	/*display: inline-block;*/
+	width: 32%;
+	margin-right: 5px;
+	margin-bottom: 40px;
+}
+
+.vision {
+	/*display: inline-block;*/
+	width: 32%;
+	margin-bottom: 40px;
+}
+
+footer {
+	margin-top: 40px;
+}
+
+.copyright {
+	text-align: center;
+}
+
+p {
+	font-family: "Rajdhani", sans-serif;
+}
+
+/*begin footer flex properties*/
+.footer-flex {
+	display: flex;
+	flex-flow: column;
+}
+
+/*end footer flex properties*/
+
 

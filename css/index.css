@@ -244,6 +244,10 @@ p {
 	flex-flow: column;
 }
 
+.hr-line {
+    display: none;
+}
+
 /*end footer flex properties*/
 
 
@@ -305,6 +309,10 @@ p {
         padding: 0 2%;
     }
 
+    .hr-line {
+        display: none;
+    }
+
     /*end 800px media queries - tablet*/
 
     /*500px media queries*/
@@ -325,9 +333,11 @@ p {
             justify-content: center;
         }
         .hr-line {
+            
             width: 100%;
             border-bottom: solid 1px black;
             margin: auto;
+            display: block;
         }
         header nav a {
             padding: 5% 0;

@@ -81,6 +81,12 @@ header {
 	text-align: center;
 	
 }
+
+.header-flex{
+    display: flex;
+    flex-flow: row;
+}
+
 /*begin flex for nav container*/
 .nav-flex {
 	display: flex;
@@ -93,9 +99,10 @@ header {
 	
 }
 /*end flex for nav container*/
-.logo {
+.logoa {
 	text-align: center;
-	margin-left: 140px;
+    margin-left: 140px;
+    justify-self: flex-end;
 	
 }
 
@@ -239,4 +246,70 @@ p {
 
 /*end footer flex properties*/
 
+
+
+/*adding media queries*/
+
+@media (max-width: 800px){
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    
+
+    .nav-flex {
+        width: 70%;
+        margin: auto;
+       flex-flow: row;
+        justify-content: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        justify-items: space-around;
+
+    }
+    .header-flex {
+        flex-flow:  column-reverse;
+        
+    }
+    
+    
+
+    .logoa {
+        justify-self: center;
+        margin-bottom: 7%;
+        
+        margin-left: 0px;
+    }
+
+    .circle-pic {
+        display: none;
+    }
+
+    .getStarted-flex {
+        justify-content: center;
+       
+    }
+
+    .twoCol-flex {
+        padding: 0 2%;
+    }
+
+    .threeCol-flex {
+        padding: 0 2%;
+        }
+    
+    .footer-flex {
+        padding: 0 2%;
+    }
+
+    
+
+    
+
+    
+
+    
+
+}
 

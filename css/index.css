@@ -250,6 +250,7 @@ p {
 
 /*adding media queries*/
 
+/*800px media queries - tablet*/
 @media (max-width: 800px){
 
     .container {
@@ -259,7 +260,7 @@ p {
     
 
     .nav-flex {
-        width: 70%;
+        width: 100%;
         margin: auto;
        flex-flow: row;
         justify-content: center;
@@ -270,6 +271,7 @@ p {
     }
     .header-flex {
         flex-flow:  column-reverse;
+        width: 100%;
         
     }
     
@@ -302,6 +304,66 @@ p {
     .footer-flex {
         padding: 0 2%;
     }
+
+    /*end 800px media queries - tablet*/
+
+    /*500px media queries*/
+    @media (max-width: 500px){
+        .header-flex {
+            flex-flow: column-reverse wrap;
+            justify-content: center;
+        }
+
+        .logoa  {
+            width: 96%;
+            border-bottom: solid 1px black;
+            margin: auto;
+            padding-bottom: 5%;
+        }
+        .nav-flex {
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+        .hr-line {
+            width: 100%;
+            border-bottom: solid 1px black;
+            margin: auto;
+        }
+        header nav a {
+            padding: 5% 0;
+            font-size: 125%;
+        }
+
+        .twoCol-flex {
+            flex-flow: column wrap;
+        }
+
+        .feature-section {
+            width: 100%;
+        }
+
+        .about-section {
+            width: 100%;
+        }
+
+        .threeCol-flex {
+            flex-flow: column wrap;
+        }
+
+        .product {
+            width: 100%;
+        }
+
+        .vision {
+            width: 100%;
+        }
+        
+        .services {
+            width: 100%;
+        }
+    }
+
+    /*end 500px media queries*/
 
     
 
